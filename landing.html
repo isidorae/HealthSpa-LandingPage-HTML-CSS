@@ -5,63 +5,66 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Drenaje linfatico brasileño</title>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <header>
-        <nav>
-<a href="">Inicio</a>
-<a href="">Acerca de</a>
-<a href="">Servicios</a>
-<a href="">Centros</a>
-<a href="">Contacto</a>
-<a href="">Agenda</a>
-        </nav>
+    <header class="navbar">
+        <div class="navegador-sitio">
+        <div><a href="#" class="logo"><img src="img/logo.png" alt="logo fox spa"></a></div>
+            <nav>
+                <a class="navbar-style" href="">Inicio</a>
+                <a class="navbar-style" href="">Acerca de</a>
+                <a class="navbar-style" href="">Servicios</a>
+                <a class="navbar-style" href="">Centros</a>
+                <a class="navbar-style" href="">Contacto</a>
+                <a class="navbar-style" href="">Agenda</a>
+            </nav>
+     </div>
     </header>
 <!-- JUMBOTRON--> 
-<main>
-    <h1>EL MASAJE QUE TU CUERPO NECESITA</h1>
-    <img src="img/bannermasajes.jpg" ="masajes fox">
-<p>Pronto abriremos una nueva sucural premium en Vitacura. <br> Se uno de nuestros
-primeros clientes y te regalamos un 50% OFF en tu primera sesión!</p>
-<form>
-    <input type="email" name="email" placeholder="Escribe tu correo">
-    <button type="submit">Quiero mi Cupón!</button>
-</form>
-
-</main>   
-
+    <div class="jumbotron">
+            <h1>EL MASAJE QUE <br>TU CUERPO NECESITA</h1>
+            <img class="jumbotron-image" src="img/bannermasajes.jpg" ="masajes fox">
+        <p>Pronto abriremos una nueva sucural premium en Vitacura. <br> Se uno de nuestros
+        primeros clientes y te regalamos un 50% OFF en tu primera sesión!</p>
+        <form>
+            <input type="email" name="email" placeholder="Escribe tu correo">
+            <button type="submit">Quiero mi Cupón!</button>
+        </form>
+    </div>
 <!-- SERVICIOS-->
-  <h2>Nuestros Servicios</h2>  
-  <section>
-    <article>
-        <h3>Drenaje Linfatico Fox Corporal</h3>
-        <img src="img/bodydrainage.jpg" alt="drenaje linfatico corporal">
+  <h2 class="h2-servicios">Nuestros Servicios</h2>  
+  <div class="catalogo">
+    <section class="catalogo-1">
+        <h3>Drenaje Linfatico Corporal</h3>
+        <img class="img-servicios" src="img/bodydrainage.jpg" alt="drenaje linfatico corporal">
         <div>60 min</div>
         <div>Técnica 100% Manual</div>
         <div>$70.000</div>
         <button type="button">AGENDAR</button>
-    </article>
-    <article>
-        <h3>Drenaje Linfatico Fox Corporal + Sauna</h3>
-        <img src="img/masajesauna.jpg" alt="drenaje linfatico corporal con sauna">
+    </section>
+    <section class="catalogo-2">
+        <h3>Drenaje Linfatico Full + Sauna</h3>
+        <img class="img-servicios" src="img/masajesauna.jpg" alt="drenaje linfatico corporal con sauna">
         <div>80-120 min</div>
         <div>Técnica 100% Manual + Sauna</div>
         <div>$95.000</div>
         <button type="button">AGENDAR</button>
-    </article>
-    <article>
+    </section>
+    <section class="catalogo-3">
         <h3>Drenaje Linfatico Fox Facial</h3>
-        <img src="img/drenajefacial.png" alt="drenaje linfatico facial">
+        <img class="img-servicios" src="img/drenajefacial.png" alt="drenaje linfatico facial">
         <div>30 min</div>
         <div>Técnica 100% Manual</div>
         <div>$45.000</div>
         <button type="button">AGENDAR</button>
-    </article>
-    <div>Ver valores por paquete <a href="">Aqui</a></div>
-  </section>
+    </section>
+  </div>
+  <div class="valores-text">VER VALORES POR PAQUETE <a href="">AQUI</a></div>
+  <hr>
   <!-- EVALUACION SERVICIOS-->
   <h2>LO QUE NUESTRAS CLIENTAS DICEN</h2>
-  <section>
+  <section class="evaluaciones">
     <article>
         <blockquote>Mi masaje favorito! cada vez que llego salgo renovada, durante la semana me siento increible y mas deshinchada <cite>Maria A.</cite></blockquote>
     </article>
@@ -76,8 +79,16 @@ primeros clientes y te regalamos un 50% OFF en tu primera sesión!</p>
     </article>
   </section>
 
+  <hr>
     <!-- BENEFICIOS/ACERCA DE-->
+    <section>
+        <h3>INSUPERABLE!</h3>
+        <img src="img/beneficios.png" alt="sistema linfatico">
+        <p>Conoce la importancia y beneficios del drenaje linfático</p>
+        <a href="">Quiero saber mas!</a>
+    </section>
 
+    <hr>
 
     <!-- FOOTER-->
     <footer>
@@ -86,7 +97,9 @@ primeros clientes y te regalamos un 50% OFF en tu primera sesión!</p>
             <a href="">Instagram</a>
             <a href="">Twitter</a>
             <a href="">Youtube</a>
+    <div class="container-footer-grid">
         <div>
+            <img class="logo-footer" src="img/icon-logo.png" alt="logo masajes fox">
             <h3>Nosotros</h3>
             <p>Nuestra sede principal esta ubicada en</p>
             <p>Estoril 450, Las Condes</p>
@@ -96,23 +109,30 @@ primeros clientes y te regalamos un 50% OFF en tu primera sesión!</p>
         </div>
         <div>
             <h3>Menu</h3>
-            <a href="">Acerca de</a>
-            <a href="">Servicios</a>
-            <a href="">Centros</a>
-            <a href="">Contacto</a>
+        <ul>
+            <li><a href="">Acerca de</a></li>
+            <li><a href="">Servicios</a></li>
+            <li><a href="">Centros</a></li>
+            <li><a href="">Contacto</a></li>
+
+        </ul>
         </div>
         <div>
             <h3>Legal</h3>
-            <a href="">Privacidad</a>
-            <a href="">Terminos</a>
+        <ul>
+            <li><a href="">Privacidad</a></li>
+            <li><a href="">Terminos</a></li>
+        </ul>
         </div>
-        <h3>Newsletter</h3>
-        <p>Enterate de las últimas novedades!</p>
         <form>
+            <h3>Newsletter</h3>
+            <p>Enterate de las últimas novedades!</p>
             <input type="text" name="nombre" placeholder="nombre">
             <input type="email" name="email" placeholder="correo">
             <input type="submit" value="Suscribirse">
         </form>
+    </div>
+    <p class="copyright-p">Fox Beauty® Spa 2023</p>
     </footer>
 </body>
 </html>

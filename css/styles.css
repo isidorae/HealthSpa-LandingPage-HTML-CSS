@@ -1,0 +1,208 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    margin:0;
+    
+}
+
+img {
+    max-width: 100%;
+}
+
+/* NAV BAR */
+
+header img {
+    display:flex;
+    width: 12rem;
+
+}
+
+div .logo {
+    display:flex;
+    justify-content: center;
+    margin-bottom:1rem;
+    margin-top: -2rem;
+
+}
+
+.navbar {
+    position:fixed;
+    top: 0;
+    left: 0rem;
+    right: 0rem;
+    z-index: 200;
+    background-color: white;
+    padding: 3rem 5rem 0.5rem 5rem;
+    text-align:center;
+    border-bottom: thin solid gray;
+}
+
+
+.navbar-style {
+    padding: 0 1rem;
+
+}
+
+/* JUMBOTRON */ 
+
+.jumbotron-image {
+    max-width: 100%;
+    height: auto;
+    background-image: linear-gradient(rgba(133, 13, 61, 0.793), rgba(243, 198, 215, 0.793));
+    
+}
+
+ .jumbotron h1 {
+    position:relative;
+    width: 50%;
+    top: 12rem;
+    font-size: 2rem;
+    left:2rem;
+    
+   
+}
+
+.jumbotron p {
+    position:relative;
+    bottom: 18rem;
+    font-size:1.5rem;
+    left:2rem;
+}
+
+.jumbotron form {
+    position:relative;
+    bottom: 15rem;
+    left:2rem;
+    
+}
+
+.jumbotron {
+    margin-top: -1rem;
+    margin-bottom: -6.5rem;
+
+}
+
+@media (max-width:900px) {
+    .jumbotron {
+        margin-bottom: -7.5rem;
+    }
+}
+
+@media (max-width:500px) {
+    .jumbotron {
+        margin-bottom: -12rem;
+    }
+}
+
+h2 {
+    text-align:center;
+    padding:2rem;
+}
+
+
+/* CATALOGO */ 
+
+.h2-servicios {
+    margin:0;
+}
+
+.catalogo {
+    display:grid;
+    grid-template-rows: auto;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    justify-items: center;
+    align-items: center;
+    text-align:center;
+    
+}
+
+.catalogo > section {
+    background-image: linear-gradient(rgba(255, 245, 249, 0.793), rgba(243, 198, 215, 0.793));
+    margin: 1rem;
+    padding:1rem;
+    max-height: 600px;
+    min-height: 300px;
+    border: thin solid rgba(243, 198, 215, 0.793);
+    border-radius: 1rem;
+}
+
+.valores-text {
+    font-weight: bold;
+    font-size: 1.3rem;
+    text-align: center;
+    padding: 2rem;
+}
+
+/*
+.catalogo {
+ 
+    margin-bottom: -50rem;
+    margin-left: 1.5rem;
+}
+
+
+.catalogo img {
+    max-height: 15rem;
+}
+
+.catalogo article {
+    text-align:center;
+    border: thin solid black;
+    padding:1rem;
+    width:18rem;
+    margin: 1rem;
+    margin-left: 0;
+    position:relative;
+}
+
+.catalogo-2 {
+   max-width:20rem;
+    left:19rem;
+    bottom: 25.6rem;
+    z-index:100;
+    
+}
+
+.catalogo-3 {
+    left:38rem;
+    bottom: 51.17rem;
+}
+*/
+
+/* evaluaciones */ 
+
+.evaluaciones {
+    display:grid;
+    grid-gap: 30px;
+}
+
+
+/* footer */
+
+.logo-footer {
+    display:none;
+    width: 2rem;
+    margin:0;
+}
+
+.container-footer-grid {
+    display:grid;
+    grid-template-columns: 1fr 0.5fr 0.5fr 1fr;
+
+}
+
+footer ul {
+    list-style-type: none;
+}
+
+.copyright-p {
+    text-align: center;
+}
