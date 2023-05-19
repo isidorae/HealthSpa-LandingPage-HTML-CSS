@@ -1,5 +1,6 @@
 html {
     box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
 }
 
 *,
@@ -13,8 +14,20 @@ body {
     
 }
 
+h2 {
+    margin-bottom:1rem;
+    text-align:center;
+    color:rgb(74, 74, 74);
+    text-shadow: 0.15rem 0.2rem 0rem whitesmoke;
+}
+
 img {
     max-width: 100%;
+}
+
+footer h3 {
+    color: #f13f77;
+    text-transform: uppercase;
 }
 
 /* NAV BAR */
@@ -42,76 +55,127 @@ div .logo {
     background-color: white;
     padding: 3rem 5rem 0.5rem 5rem;
     text-align:center;
-    border-bottom: thin solid gray;
+    border-bottom: thin solid rgb(198, 198, 198);
+    box-shadow: 0rem 0rem 0.3rem rgb(198, 198, 198);
 }
 
 
 .navbar-style {
+    color: #202124;
     padding: 0 1rem;
+    text-decoration: none;
+    font-weight: 700;
 
+}
+
+.navbar-style:hover {
+    color: #f13f77;
+
+}
+
+.navbar-responsive-small {
+    display: none;
 }
 
 /* JUMBOTRON */ 
 
-.jumbotron-image {
+.jumbotron > img {
     max-width: 100%;
     height: auto;
-    background-image: linear-gradient(rgba(133, 13, 61, 0.793), rgba(243, 198, 215, 0.793));
-    
+    background: linear-gradient(rgba(29, 38, 61, 0.8), rgba(29, 38, 61, 0.8));
+  
 }
-
+/*proprciones para >1000px */
  .jumbotron h1 {
-    position:relative;
-    width: 50%;
-    top: 12rem;
-    font-size: 2rem;
+    position:absolute;
+    color:#f13f77;
+    width: 80%;
+    height: auto;
+    top: 10rem;
+    font-size: 3.5rem;
     left:2rem;
-    
-   
+    right:2rem;
+    letter-spacing:0.1rem;
+    text-shadow: 0.15rem 0.2rem 0rem whitesmoke;
+
 }
 
 .jumbotron p {
-    position:relative;
-    bottom: 18rem;
-    font-size:1.5rem;
+    position:absolute;
+    color: #202124;
+    width: 80%;
+    height:auto;
+    text-shadow: 0.1rem 0.1rem 0rem whitesmoke;
+    top:22rem;
+    font-size:1.7rem;
+    font-weight: bold;
     left:2rem;
+    right:2rem;
 }
 
 .jumbotron form {
-    position:relative;
-    bottom: 15rem;
-    left:2rem;
+    margin: 0 auto;
+    position:absolute;
+    width:80vw;
+    height:auto;
+    top:35rem;
+    left:1.5rem;
+
     
 }
 
+.main-form input[type=email]{
+    opacity: 0.8;
+    color:#3a2d31;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size:1.2rem;
+    padding-left:1rem;
+    height: 4rem;
+    width: 40rem;
+    border-radius: 1.3rem;
+    border:none;
+    box-shadow: 0rem 0.05rem 0.1rem #3a2d31;
+
+}
+
+.main-form button{
+    background-image: linear-gradient(rgba(231, 66, 96, 0.793), rgba(246, 63, 133, 0.793));
+    opacity: 0.8;
+    color:whitesmoke;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    height: 4rem;
+    width: 15rem;
+    border: none;
+    border-radius: 1.3rem;
+    box-shadow: 0rem 0.05rem 0.1rem #3a2d31;
+
+}
+
+.main-form button:hover {
+    background-image: linear-gradient(rgba(237, 192, 168, 0.793), rgba(246, 63, 133, 0.793));
+    box-shadow:0rem 0rem 0.3rem rgb(141, 141, 141);
+}
+
 .jumbotron {
-    margin-top: -1rem;
-    margin-bottom: -6.5rem;
+    margin-top: 9rem;
 
-}
-
-@media (max-width:900px) {
-    .jumbotron {
-        margin-bottom: -7.5rem;
-    }
-}
-
-@media (max-width:500px) {
-    .jumbotron {
-        margin-bottom: -12rem;
-    }
-}
-
-h2 {
-    text-align:center;
-    padding:2rem;
 }
 
 
 /* CATALOGO */ 
 
+.catalogo-container {
+    margin:2rem
+}
+
+
 .h2-servicios {
-    margin:0;
+
+
 }
 
 .catalogo {
@@ -134,6 +198,15 @@ h2 {
     border-radius: 1rem;
 }
 
+.catalogo-flex {
+    display:flex;
+    flex-flow:column nowrap;
+}
+
+.catalogo-flex img {
+    max-height:50vh;
+}
+
 .valores-text {
     font-weight: bold;
     font-size: 1.3rem;
@@ -141,47 +214,67 @@ h2 {
     padding: 2rem;
 }
 
-/*
-.catalogo {
- 
-    margin-bottom: -50rem;
-    margin-left: 1.5rem;
+/* evaluaciones */ 
+
+
+.evaluaciones-flex {
+    display:flex;
+    flex-flow:row wrap;
+   
+}
+
+.evaluaciones-flex article {
+    display:flex;
+    flex: 1 1 5rem;
+
 }
 
 
-.catalogo img {
-    max-height: 15rem;
-}
 
-.catalogo article {
-    text-align:center;
-    border: thin solid black;
-    padding:1rem;
-    width:18rem;
-    margin: 1rem;
-    margin-left: 0;
-    position:relative;
-}
+/* blog entry */ 
 
-.catalogo-2 {
-   max-width:20rem;
-    left:19rem;
-    bottom: 25.6rem;
-    z-index:100;
+.blog-entry {
+    height:60vh;
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:center;
+    background-image:url(/img/beneficios.png)
     
 }
 
-.catalogo-3 {
-    left:38rem;
-    bottom: 51.17rem;
+.blog-entry div {
+    height: inherit;
+    display:flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items:center;
+    text-align:center;
+    background-color: rgba(232, 56, 100, 0.3);
 }
-*/
 
-/* evaluaciones */ 
+.blog-text h3 {
+    color:whitesmoke;
+    margin: 0;
+}
 
-.evaluaciones {
-    display:grid;
-    grid-gap: 30px;
+.blog-text button {
+    background-image: linear-gradient(rgba(231, 66, 96, 0.793), rgba(246, 63, 133, 0.793));
+    opacity: 0.8;
+    color:whitesmoke;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 1rem;
+    height: 2rem;
+    width: 12rem;
+    border: none;
+    border-radius: 1.3rem;
+    box-shadow: 0rem 0.05rem 0.1rem #3a2d31;
+}
+
+.blog-text button:hover {
+    background-image: linear-gradient(rgba(237, 192, 168, 0.793), rgba(246, 63, 133, 0.793));
+    box-shadow:0rem 0rem 0.3rem rgb(141, 141, 141);
 }
 
 
@@ -196,11 +289,23 @@ h2 {
 .container-footer-grid {
     display:grid;
     grid-template-columns: 1fr 0.5fr 0.5fr 1fr;
+    margin: 0 1.5rem 0 1.5rem;
 
 }
 
-footer ul {
-    list-style-type: none;
+.nosotros-footer {
+    margin-right: 1rem;
+}
+
+.menu-footer,
+.legal-footer {
+    margin:0 1rem 0 1rem;
+    display:flex;
+    flex-direction: column;
+}
+
+footer form {
+    margin:0 1rem 0 1rem;
 }
 
 .copyright-p {

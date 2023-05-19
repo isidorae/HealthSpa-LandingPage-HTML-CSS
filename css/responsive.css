@@ -1,0 +1,437 @@
+/* NAV BAR */
+
+/* 760 px */
+@media (max-width:47.5em) {
+
+    header img {
+        display:flex;
+        width: 8rem;
+    }
+
+    .navbar-style {
+        display:none;
+    
+    }
+
+    .navbar-responsive-small {
+        display:flex;
+        padding:0.5rem;
+        width: 3rem;
+        position:absolute;
+        bottom: 2rem;
+        left:1.5rem;
+    }
+
+}
+
+/* JUMBOTRON */ 
+
+/* 900px */
+@media (max-width:56.250em) {
+    .jumbotron {
+        margin-bottom: -20rem;
+        margin-bottom: 0;
+    }
+}
+
+/* 850-1110px */
+@media (max-width:69.375em) {
+    .jumbotron {
+        margin-bottom: -20rem;
+        margin-bottom: 0;
+    }
+
+    .jumbotron h1 {
+        width: 90%;
+        height: auto;
+        top: 10rem;
+        font-size: 3.5rem;
+        left:2rem;
+        right:2rem;
+        letter-spacing:0.1rem;
+        text-shadow: 0.15rem 0.2rem 0rem whitesmoke;
+    }
+    
+    .jumbotron p {
+        width: 80%;
+        height:auto;
+        text-shadow: 0.1rem 0.1rem 0rem whitesmoke;
+        top:22rem;
+        font-size:1.7rem;
+        font-weight: bold;
+        left:2rem;
+        right:2rem;
+    }
+    
+    .jumbotron form {
+        top:35rem;
+        left:1.5rem;
+    }
+    
+    .main-form input[type=email]{
+        font-size:1.2rem;
+        padding-left:1rem;
+        height: 4rem;
+        width: 30rem;
+        border-radius: 1.3rem;
+        border:none;
+        box-shadow: 0rem 0.05rem 0.1rem #3a2d31;
+    }
+    
+    .main-form button{
+        font-size: 1.2rem;
+        height: 4rem;
+        width: 15rem;
+        border: none;
+        border-radius: 1.3rem;
+        box-shadow: 0rem 0.05rem 0.1rem #3a2d31;
+    }
+    
+}
+
+
+/* 750-850px */
+@media (max-width: 53.125em) {
+    .jumbotron {
+        margin-top: 6rem;
+        margin-bottom: 0rem;
+        min-height:100%;
+    }
+
+    .jumbotron h1 {
+        width: 80%;
+        top: 10rem;
+        font-size: 2.5rem;
+        left:1.5rem;
+        right:0.5rem;
+        text-shadow: 0.1rem 0.12rem 0rem whitesmoke;
+    
+    }
+ 
+
+    .jumbotron p {
+        text-shadow: 0.06rem 0.06rem 0rem whitesmoke;
+        top: 18rem;
+        width: 80%;
+        font-size:1.2rem;
+        font-weight: bold;
+        left:1.5rem;
+        right:2rem;
+    } 
+
+    .jumbotron form {
+        top: 26rem;
+        left:1.5rem;
+    }
+
+    .main-form input[type=email]{
+        font-size:1.1rem;
+        padding-left:1rem;
+        height: 3rem;
+        width: 40rem;
+        border-radius: 1rem;
+    }
+    
+    .main-form button{
+        font-size:1.1rem;
+        height: 3rem;
+        width: 40rem;
+        margin-top:0.2rem;
+        border: none;
+        border-radius: 1.3rem;
+        box-shadow: 0rem 0.05rem 0.1rem #3a2d31;
+    }
+
+}
+   
+
+/* 520px-750px */
+
+@media (max-width: 46.875em) {
+    .jumbotron {
+        margin-top: 6rem;
+        margin-bottom: 0rem;
+        min-height:100%;
+    }
+
+    .jumbotron h1 {
+        width: 95%;
+        top: 8rem;
+        font-size: 2.5rem;
+        left:1.5rem;
+        right:0.5rem;
+        text-shadow: 0.1rem 0.12rem 0rem whitesmoke;
+    
+    }
+ 
+
+    .jumbotron p {
+        text-shadow: 0.06rem 0.06rem 0rem whitesmoke;
+        top: 16rem;
+        width: 80%;
+        font-size:1.2rem;
+        font-weight: bold;
+        left:1.5rem;
+        right:2rem;
+    } 
+
+    .jumbotron form {
+        top: 24rem;
+        left:1.5rem;
+    }
+
+    .main-form input[type=email]{
+        font-size:1.1rem;
+        padding-left:1rem;
+        height: 3rem;
+        width: 35rem;
+        border-radius: 1rem;
+    }
+    
+    .main-form button{
+        font-size:1.1rem;
+        height: 3rem;
+        width: 35rem;
+        margin-top:0.2rem;
+        border: none;
+        border-radius: 1.3rem;
+        box-shadow: 0rem 0.05rem 0.1rem #3a2d31;
+    }
+
+}
+
+
+/* 400-520px */
+@media screen and (max-width:32.5em) {
+    .jumbotron {
+        margin-top: 6rem;
+        margin-bottom: 0rem;
+        min-height:100%;
+    }
+
+    .jumbotron h1 {
+        width: 90%;
+        top: 6rem;
+        font-size: 1.5rem;
+        left:1rem;
+        right:0.5rem;
+        text-shadow: 0.1rem 0.12rem 0rem whitesmoke;
+    
+    }
+ 
+
+    .jumbotron p {
+        text-shadow: 0.06rem 0.06rem 0rem whitesmoke;
+        top: 10.5rem;
+        width: 90%;
+        font-size:1rem;
+        font-weight: bold;
+        left:1rem;
+        right:2rem;
+    } 
+
+    .jumbotron form {
+        top: 17rem;
+        left:1rem;
+    }
+
+    .main-form input[type=email]{
+        font-size:0.9rem;
+        padding-left:1rem;
+        height: 2.5rem;
+        width: 25rem;
+        border-radius: 1rem;
+    }
+    
+    .main-form button{
+        font-size:0.9rem;
+        height: 2.5rem;
+        width: 25rem;
+        margin-top:0.2rem;
+        border: none;
+        border-radius: 1.3rem;
+        box-shadow: 0rem 0.05rem 0.1rem #3a2d31;
+    }
+
+}
+
+
+
+/* 520-550px */
+@media (max-width:34.375em) {
+    .jumbotron {
+        margin-top: 6rem;
+        margin-bottom: 0rem;
+        min-height:100%;
+    }
+
+    .jumbotron h1 {
+        width: 90%;
+        top: 6.5rem;
+        font-size: 2rem;
+        left:1rem;
+        right:0.5rem;
+        text-shadow: 0.1rem 0.12rem 0rem whitesmoke;
+    
+    }
+ 
+
+    .jumbotron p {
+        text-shadow: 0.06rem 0.06rem 0rem whitesmoke;
+        top: 13rem;
+        width: 90%;
+        font-size:1.1rem;
+        font-weight: bold;
+        left:1rem;
+        right:2rem;
+    } 
+
+    .jumbotron form {
+        top: 20.5rem;
+        left:1rem;
+    }
+
+    .main-form input[type=email]{
+        font-size:1.1rem;
+        padding-left:1rem;
+        height: 2.5rem;
+        width: 28rem;
+        border-radius: 1rem;
+    }
+    
+    .main-form button{
+        font-size:1.1rem;
+        height: 2.5rem;
+        width: 28rem;
+        margin-top:0.2rem;
+        border: none;
+        border-radius: 1.3rem;
+        box-shadow: 0rem 0.05rem 0.1rem #3a2d31;
+    }
+
+}
+
+
+/* 400-520px */
+@media (max-width:32.5em) {
+    .jumbotron {
+        margin-top: 6rem;
+        margin-bottom: 0rem;
+        min-height:100%;
+    }
+
+    .jumbotron h1 {
+        width: 90%;
+        top: 6rem;
+        font-size: 1.5rem;
+        left:1rem;
+        right:0.5rem;
+        text-shadow: 0.1rem 0.12rem 0rem whitesmoke;
+    
+    }
+ 
+
+    .jumbotron p {
+        text-shadow: 0.06rem 0.06rem 0rem whitesmoke;
+        top: 10.5rem;
+        width: 90%;
+        font-size:1rem;
+        font-weight: bold;
+        left:1rem;
+        right:2rem;
+    } 
+
+    .jumbotron form {
+        top: 17rem;
+        left:1rem;
+    }
+
+    .main-form input[type=email]{
+        font-size:0.9rem;
+        padding-left:1rem;
+        height: 2.5rem;
+        width: 25rem;
+        border-radius: 1rem;
+    }
+    
+    .main-form button{
+        font-size:0.9rem;
+        height: 2.5rem;
+        width: 25rem;
+        margin-top:0.2rem;
+        border: none;
+        border-radius: 1.3rem;
+        box-shadow: 0rem 0.05rem 0.1rem #3a2d31;
+    }
+
+}
+
+/* 400px */
+@media screen and (max-width:25em) {
+    .jumbotron {
+        margin-top: 6rem;
+        margin-bottom: 0rem;
+        min-height:100%;
+    }
+    .jumbotron h1 {
+        width: 100vw;
+        top: 6rem;
+        font-size: 1.5rem;
+        left:1rem;
+        right:0.5rem;
+        letter-spacing:0rem;
+        text-shadow: 0.1rem 0.12rem 0rem whitesmoke;
+    
+    }
+
+    .jumbotron p {
+        text-shadow: 0.06rem 0.06rem 0rem whitesmoke;
+        top:10.5rem;
+        width:90%;
+        font-size:0.9rem;
+        font-weight: bold;
+        left:1rem;
+        right:2rem;
+    } 
+
+    .jumbotron form {
+        top: 17rem;
+        left:1rem;
+    }
+    .main-form input[type=email]{
+        font-size:0.9rem;
+        padding-left:1rem;
+        height: 2rem;
+        width: 21rem;
+        border-radius: 1rem;
+    }
+    
+    .main-form button{
+        font-size:0.9rem;
+        height: 2rem;
+        width: 21rem;
+        margin-top:0.2rem;
+        border: none;
+        border-radius: 1.3rem;
+        box-shadow: 0rem 0.05rem 0.1rem #3a2d31;
+    }
+
+}
+
+
+/* FOOTER */ 
+
+/* max 540px*/
+@media screen and (max-width:33.750em){
+    .container-footer-grid {
+        display: flex;
+        flex-flow: row wrap;
+    
+    }
+
+    .container-footer-grid div form {
+        display: flex;
+        flex-flow: row wrap;
+    
+    }
+}
