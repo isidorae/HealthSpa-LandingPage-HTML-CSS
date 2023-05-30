@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Drenaje linfatico brasileño</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
@@ -28,9 +29,9 @@
         <div><img class="navbar-responsive-small" src="img/navbar.png" alt="navbar"></div>
     </header>
 <!-- JUMBOTRON--> 
-<main class="jumbo-container">
-    <div class="jumbotron">
-           <img class="main-image" src="img/bannermasajes.jpg" alt="masajes fox">
+<div class="jumbo">
+    <div class="jumbo-container">
+           <!-- <img class="main-image" src="img/bannermasajes.jpg" alt="masajes fox"> -->
            <h1>EL MASAJE QUE TU CUERPO ESTABA ESPERANDO</h1>
             <p>Pronto abriremos una nueva sucursal premium en Vitacura. Se uno de nuestros
             primeros clientes y te regalamos un 50% OFF en tu primera sesión!</p>
@@ -39,7 +40,7 @@
                 <button type="submit">Quiero mi Cupón!</button>
              </form>
     </div>
-</main>
+</div>
 <!-- SERVICIOS-->
 <section class="catalogo-container">
   <h2 class="h2-servicios">NUESTROS SERVICIOS</h2>  
@@ -47,49 +48,52 @@
         <section class="catalogo-flex">
             <h3>Drenaje Linfatico Corporal</h3>
             <img class="img-servicios" src="img/bodydrainage.jpg" alt="drenaje linfatico corporal">
-            <div>60 min</div>
-            <div>Técnica 100% Manual</div>
-            <div>$70.000</div>
+            <div>
+                <p>60 min<br>Técnica 100% Manual<br>$70.000</p>
+            </div>
             <button type="button">AGENDAR</button>
         </section>
         <section class="catalogo-flex">
             <h3>Drenaje Linfatico Full + Sauna</h3>
             <img class="img-servicios" src="img/masajesauna.jpg" alt="drenaje linfatico corporal con sauna">
-            <div>80-120 min</div>
-            <div>Técnica 100% Manual + Sauna</div>
-            <div>$95.000</div>
+            <div>
+                <p>80-120 min<br>Técnica 100% Manual + Sauna<br>$95.000</p>
+            </div>
             <button type="button">AGENDAR</button>
         </section>
         <section class="catalogo-flex">
             <h3>Drenaje Linfatico Fox Facial</h3>
             <img class="img-servicios" src="img/drenajefacial.png" alt="drenaje linfatico facial">
-            <div>30 min</div>
-            <div>Técnica 100% Manual</div>
-            <div>$45.000</div>
+            <div>
+                <p>30 min<br>Técnica 100% Manual<br>$45.000</p>
+            </div>
             <button type="button">AGENDAR</button>
         </section>
   </div>
 </section>
-  <div class="valores-text">VER VALORES POR PAQUETE <a href="">AQUI</a></div>
+  <div class="valores-text">VER VALORES POR PAQUETE <a class="valores-link" href="">AQUI</a></div>
   <hr>
   <!-- EVALUACION SERVICIOS-->
   <h2>LO QUE NUESTRAS CLIENTAS DICEN</h2>
   <section class="evaluaciones-flex">
-        <article>
-            <blockquote>"Mi masaje favorito! cada vez que llego salgo renovada, durante la semana me siento increible y mas deshinchada"<br><br><cite>Maria A.</cite></blockquote>
+        <article class="evaluacion">
+            <blockquote>"Mi masaje favorito! cada vez que llego salgo renovada, durante la semana me siento increible y mas deshinchada"
+                <br><br><cite>Maria A.</cite><div class="stars-image"></div></blockquote>
         </article>
-        <article>
-            <blockquote>"Profesional que me atendio es entregada al 100% corazon generoso y empatica con sus pacientes y dificultades"<br><br><cite>Gloria R.</cite></blockquote>
+        <article class="evaluacion">
+            <blockquote>"La profesional que me atendio es entregada al 100% corazon generoso y empatica con sus pacientes y dificultades"<br><br>
+                <cite>Gloria R.</cite><div class="stars-image"></div></blockquote>
         </article>
-        <article>
-            <blockquote>"Maravillosa Sesión!! llegue con muchisima inflamación abdominal y senti cambios de inmediato! WOW! Imposible de dejar"<br><br><cite>Amanda F.</cite></blockquote>
+        <article class="evaluacion">
+            <blockquote>"Maravillosa Sesión!! llegue con muchisima inflamación abdominal y senti cambios de inmediato! WOW! Imposible de dejar"
+                <br><br><cite>Amanda F.</cite><div class="stars-image"></div></blockquote>
         </article>
-        <article>
-            <blockquote>"Me encanto, volevere sin duda!, me voy full relax, liviana y mas flaca jaja!"<br><br><cite>Jessica E.</cite></blockquote>
+        <article class="evaluacion">
+            <blockquote>"Me encanto, volevere sin duda!, me voy full relax, liviana y mas flaca jaja!"<br><br>
+                <cite>Jessica E.</cite><div class="stars-image"></div></blockquote>
         </article>
   </section>
 
-  <hr>
     <!-- BENEFICIOS/ACERCA DE-->
     <section class="blog-entry">
         <div class="blog-text">
@@ -125,17 +129,17 @@
             <a href="">Privacidad</a>
             <a href="">Terminos</a>
         </div>
-        <form>
+        <form class="form-footer">
             <h3>Newsletter</h3>
             <p>Enterate de las últimas novedades!</p>
-            <input type="text" name="nombre" placeholder="nombre">
-            <input type="email" name="email" placeholder="correo">
-            <input type="submit" value="Suscribirse">
+            <input type="text" name="nombre" placeholder="nombre"><br>
+            <input type="email" name="email" placeholder="correo"><br>
+            <input type="submit" value="Suscribirse"><br><br>
             <div>Siguenos en</div>
-            <a href="">Facebook</a>
-            <a href="">Instagram</a>
-            <a href="">Twitter</a>
-            <a href="">Youtube</a>
+            <a href=""><i class="bi bi-facebook"></i></a>
+            <a href=""><i class="bi bi-instagram"></i></a>
+            <a href=""><i class="bi bi-twitter"></i></a>
+            <a href=""><i class="bi bi-youtube"></i></a>
         </form>
     </div>
     <p class="copyright-p">Fox Beauty® Spa 2023</p>
