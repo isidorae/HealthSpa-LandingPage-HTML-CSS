@@ -89,7 +89,7 @@ div .logo {
     margin-top: 150px;
     height: 90vh;
     overflow: hidden;
-    background-image: url(/img/bannermasajes.jpg);
+    background-image: url(../img/bannermasajes.jpg);
     background-position: center; 
     background-repeat: no-repeat; 
     background-size: cover;
@@ -182,11 +182,6 @@ div .logo {
 }
 
 
-.h2-servicios {
-
-
-}
-
 .catalogo {
     display:grid;
     grid-template-rows: auto;
@@ -198,7 +193,7 @@ div .logo {
 }
 
 .catalogo > section {
-    background-image: linear-gradient(rgba(255, 245, 249, 0.793), rgba(243, 198, 215, 0.793)), url(/img/bodydrainage.jpg);
+    background-image: linear-gradient(rgba(255, 245, 249, 0.793), rgba(243, 198, 215, 0.793)), url(../img/bodydrainage.jpg);
     background-size:contain;
     margin: 1rem;
     padding:1rem;
@@ -222,6 +217,7 @@ div .logo {
 .catalogo-flex button {
     display:flex;
     align-self:center;
+    justify-self: center;
     background-image: linear-gradient(rgba(231, 66, 96, 0.793), rgba(246, 63, 133, 0.793));
     opacity: 0.8;
     color:whitesmoke;
@@ -295,7 +291,7 @@ div .logo {
     display:flex;
     margin:1rem 1rem 1rem 0;
     height: 1.5rem;
-    background-image: url(/img/5stars.png);
+    background-image: url(../img/5stars.png);
     background-size: contain;
     background-repeat: no-repeat;
 }
@@ -310,7 +306,7 @@ div .logo {
     background-repeat:no-repeat;
     background-size:cover;
     background-position:center;
-    background-image:url(/img/beneficios.png);
+    background-image:url(../img/beneficios.png);
     
     
 }
@@ -347,10 +343,11 @@ div .logo {
     text-transform: uppercase;
     font-size: 1rem;
     height: 2rem;
-    width: 12rem;
+    width: 14rem;
     border: none;
     border-radius: 1.3rem;
     box-shadow: 0rem 0.05rem 0.1rem #3a2d31;
+
 }
 
 .blog-text button:hover {
