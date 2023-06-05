@@ -38,6 +38,8 @@
 
 
 
+
+
 /* FOOTER */ 
 
 /* max 540px*/
@@ -53,4 +55,34 @@
         flex-flow: row wrap;
     
     }
+
+    .catalogo > section {
+        margin: 1rem auto 1rem auto;
+    }
+
+}
+
+/* max 410px*/
+@media screen and (max-width:25.625em){
+
+    .jumbo { 
+        margin-top: 70px;
+        height: 90vh;
+        overflow: hidden;
+        background-image: url(../img/bannermasajes.jpg);
+        background-position: center; 
+        background-repeat: no-repeat; 
+        background-size: cover;
+    
+    }
+
+    footer {
+      padding-bottom: 3rem;  
+    }
+
+    .copyright-p {
+        padding-top: 1rem;
+    }
+
+
 }
